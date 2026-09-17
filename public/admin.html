@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <main class="container wide">
+    <section class="card">
+      <div class="admin-header">
+        <div>
+          <h1>Admin Dashboard</h1>
+          <p class="muted">View, search, filter, update and delete enquiries.</p>
+        </div>
+        <a href="/" class="secondary-button">Contact Form</a>
+      </div>
+
+      <div class="toolbar">
+        <input id="adminToken" type="password" placeholder="ADMIN_TOKEN">
+        <button id="saveToken">Save Token</button>
+        <button id="loadButton" class="secondary-button">Refresh</button>
+      </div>
+
+      <div class="toolbar">
+        <input id="search" type="search" placeholder="Search name, email or message">
+        <select id="statusFilter">
+          <option value="">All statuses</option>
+          <option value="new">New</option>
+          <option value="read">Read</option>
+          <option value="resolved">Resolved</option>
+        </select>
+        <button id="filterButton">Apply Filter</button>
+      </div>
+
+      <p id="adminMessage" class="form-message"></p>
+
+      <div id="enquiries" class="enquiries"></div>
+    </section>
+  </main>
+
+  <script src="/admin.js"></script>
+</body>
+</html>
