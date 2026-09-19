@@ -5,9 +5,8 @@
   "description": "Week 3 Task 1, Task 2 and optional Task 3 - Express contact API with SMTP and admin dashboard",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
-    "dev": "node --watch server.js"
-  },
+  "start": "node --use-system-ca server.js"
+},
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^16.4.7",
